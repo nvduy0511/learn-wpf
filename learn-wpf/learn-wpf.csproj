@@ -97,5 +97,8 @@
   <ItemGroup>
     <Resource Include="Images\folder-solid.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="directory\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
