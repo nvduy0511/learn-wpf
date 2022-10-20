@@ -18,6 +18,10 @@ namespace learn_wpf.ViewModels
         public ICommand WindowLoadedCommand { get; set; }
 
         private Random mRandom;
+        public Window2ViewModel()
+        {
+
+        }
         public Window2ViewModel(Window window)
         {
             mWindow = window;
@@ -27,10 +31,10 @@ namespace learn_wpf.ViewModels
                 Num = mRandom.Next().ToString();
             });
 
-            WindowLoadedCommand = new RelayCommand<TextBlock>((p) =>
+            WindowLoadedCommand = new RelayParameterizedCommand((p) =>
             {
                 mWindow.Title = "ABC NE";
-                p.Text = "Nguyen Van DUy";
+                ((TextBlock)p).Text = "Nguyen Van DUy";
             });
         }
 
