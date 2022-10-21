@@ -25,5 +25,11 @@ namespace learn_wpf
             InitializeComponent();
             this.DataContext = new MainWindowViewModel();
         }
+
+        private void TestUserControl_ButtonClick(object sender, RoutedEventArgs e)
+        {
+            testUserControl.ContentButton = "New Content Button";
+            testUserControl.ContentTextBox = "New Content Textbox";
+        }
     }
 }

@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:learn_wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+<<<<<<< Updated upstream
     <StackPanel>
         <StackPanel Orientation="Horizontal">
             <Button Command="{Binding ChangePage}" CommandParameter="0">LoginPage</Button>
@@ -16,3 +17,18 @@
         </Grid>
     </StackPanel>
 </Window>
+=======
+
+    <StackPanel>
+        <local:TestUserControl 
+            x:Name="testUserControl" 
+            ContentButton="Click" 
+            ContentTextBox="Nguyen Van Duy" 
+            ButtonClick="TestUserControl_ButtonClick">
+        </local:TestUserControl>
+        <Path Stroke="Black" Fill="Gray"
+      Data="M 10,100 C 10,300 300,-200 300,100" />
+    </StackPanel>
+
+</Window>
+>>>>>>> Stashed changes
